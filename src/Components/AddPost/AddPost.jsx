@@ -22,25 +22,36 @@ const AddPost = (props) => {
         const [post, setPost] = useState(' ');
 
         function handleSubmit(formEvent){
-            formEvent.PreventDefault()
-
+            formEvent.preventDefault()
+            let newEntry = {
+                name: name,
+                post: post
+            }
+            console.log(newEntry)
+            props.addNewPost(newEntry)
         }
         return ( 
         <form onSubmit={handleSubmit}>
             <div className="form-group row">
                 <label className="col-sm-2 col-form-label">Name</label>
                 <div className="col-sm-10">
-                    <input type="text" onChange={(event)=> setName(event.target.value)} value={name}/>
+                    <input 
+                    type="text" 
+                    value={name}
+                    onChange={(event)=> setName(event.target.value)} />
                     
                     </div>
                 </div>
                 <div className="form-group row">
                 <label className="col-sm-2 col-form-label">Post</label>
                 <div className="col-sm-10">
-                    <input type="text" onChange={(event)=> setPost(event.target.value)} value={post}/>
+                    <input 
+                    type="text" 
+                    value={post}
+                    onChange={(event)=> setPost(event.target.value)} />
                     
                 </div>
-                <button>Create</button>
+                <button type='submit' className='btn btn-primary' style={{'margin-top': '1em'}}>Add</button>
             </div>
         </form>
      );

@@ -1,3 +1,5 @@
+import Buttons from "../ColorButton/ColorButton";
+
 const DisplayPost = (props) => {
 
 
@@ -7,14 +9,13 @@ const DisplayPost = (props) => {
                   return (
                     <tbody>
                             <tr>
-                                <th>{post.name}</th>
+                                <td>{post.name}</td>
                             </tr>
-                        <tr>
-                            <td>{post.post}</td>
-                            {/* you will replace this button with a new component and that "Button" component will have a like and dislike button */}
-                        </tr>  
-                        <button>like</button>
-                        <button>Dislike</button>
+                            <tr>
+                                <td>{post.post}</td>
+                            </tr>
+                           
+                        
                     </tbody>
                 
                   );
