@@ -1,4 +1,4 @@
-import Buttons from "../ColorButton/ColorButton";
+import ColorButton from "../ColorButton/ColorButton";
 
 const DisplayPost = (props) => {
 
@@ -14,8 +14,10 @@ const DisplayPost = (props) => {
                             <tr>
                                 <td>{post.post}</td>
                             </tr>
-                           
-                        
+                            <tr>
+                            <td><ColorButton/> </td>
+                            
+                            </tr>
                     </tbody>
                 
                   );

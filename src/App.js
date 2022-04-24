@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import DisplayPost from './Components/DisplayPost/DisplayPost';
 import AddPost from './Components/AddPost/AddPost';
-import ColorButton from './Components/ColorButton/ColorButton';
+
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
         <h1>Social Feed</h1>
         <AddPost addNewPost = {AddNewPost}/>
         <DisplayPost posts={posts}/>
-        <Buttons Addbuttons = {Addbuttons}/> 
+        
       </div>
     </div>
 
