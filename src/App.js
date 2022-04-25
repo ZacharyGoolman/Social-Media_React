@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import DisplayPost from './Components/DisplayPost/DisplayPost';
 import AddPost from './Components/AddPost/AddPost';
-
+import './App.css';
 
 
 function App() {
@@ -18,8 +18,9 @@ function App() {
 
   return (
     <div>
-      <div class="header">
+      <div className="header">
         <h1>Social Feed</h1>
+        
         <AddPost addNewPost = {AddNewPost}/>
         <DisplayPost posts={posts}/>
         

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ColorButton.css'
 
 
 
@@ -17,10 +18,10 @@ const ColorButton = (props) => {
     return (  
         <div>
             <tr>
-                <td><button className='inactive' onClick={handleClick}> {props.message}</button></td>
+                <td><button className={buttonClass} onClick={handleClick}> {props.message} Like </button></td>
             </tr> 
             <tr>
-                <td><button className='inactive' onClick={handleClick}> {props.message}</button></td>
+                <td><button className={buttonClass} onClick={handleClick}> {props.message} Dislike </button></td>
             </tr>
            
         </div>

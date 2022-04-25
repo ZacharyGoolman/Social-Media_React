@@ -32,6 +32,7 @@ const AddPost = (props) => {
         }
         return ( 
         <form onSubmit={handleSubmit}>
+        <div className= 'border-box'/>
             <div className="form-group row">
                 <label className="col-sm-2 col-form-label">Name</label>
                 <div className="col-sm-10">
